@@ -1,0 +1,11 @@
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\bin\Debug\netcoreapp2.0\PharmaCoreApp02.deps.json
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\bin\Debug\netcoreapp2.0\PharmaCoreApp02.runtimeconfig.json
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\bin\Debug\netcoreapp2.0\PharmaCoreApp02.runtimeconfig.dev.json
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\bin\Debug\netcoreapp2.0\PharmaCoreApp02.dll
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\bin\Debug\netcoreapp2.0\PharmaCoreApp02.pdb
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\obj\Debug\netcoreapp2.0\PharmaCoreApp02.csprojResolveAssemblyReference.cache
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\obj\Debug\netcoreapp2.0\PharmaCoreApp02.csproj.CoreCompileInputs.cache
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\obj\Debug\netcoreapp2.0\PharmaCoreApp02.AssemblyInfoInputs.cache
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\obj\Debug\netcoreapp2.0\PharmaCoreApp02.AssemblyInfo.cs
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\obj\Debug\netcoreapp2.0\PharmaCoreApp02.dll
+C:\Users\admins\source\repos\PharmaCoreApp02\PharmaCoreApp02\obj\Debug\netcoreapp2.0\PharmaCoreApp02.pdb

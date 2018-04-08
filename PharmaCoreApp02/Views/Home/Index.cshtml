@@ -1,0 +1,196 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    @*@(Html.Kendo().PanelBar()
+        .Name("IntroPanelBar")
+        .Items(items =>
+        {
+            items.Add()
+                .Text("ASP.NET Core")
+                .Selected(true)
+                .Expanded(true)
+                .Content(@<text>
+                <p style="padding:1em 2em">
+                    Learn how to build ASP.NET apps that can run anywhere.
+                    <a target="_blank" href="http://go.microsoft.com/fwlink/?LinkID=525028&clcid=0x409">Learn More</a>
+                </p>
+                </text>);
+            items.Add()
+                .Text("Visual Studio")
+                .Content(@<text>
+                <p style="padding:1em 2em">
+                    There are powerful new features in Visual Studio for building modern web apps.
+                    <a target="_blank" href="http://go.microsoft.com/fwlink/?LinkID=525030&clcid=0x409">Learn More</a>
+                </p>
+                </text>);
+            items.Add()
+                .Text("Package Management")
+                .Content(@<text>
+                <p style="padding:1em 2em">
+                    Bring in libraries from NuGet, Bower, and npm, and automate tasks using Grunt or Gulp.
+                    <a target="_blank" href="http://go.microsoft.com/fwlink/?LinkID=525029&clcid=0x409">Learn More</a>
+                </p>
+                </text>);
+        })
+        )*@
+
+    <section class="well">
+        <h2 class="ra-well-title">Profile Setup</h2>
+        <div class="form-horizontal form-widgets col-sm-6">
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="name">First Name</label>
+                <div class="col-sm-8 col-md-6">
+                    <input id="name" class="k-textbox" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="name">Last Name</label>
+                <div class="col-sm-8 col-md-6">
+                    <input id="name" class="k-textbox" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="birthday">Birthday</label>
+                <div class="col-sm-8 col-md-6">
+                    @(Html.Kendo().DatePicker().Name("date").Value("10/09/1979"))
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="gender">Gender</label>
+                <div class="col-sm-8 col-md-6">
+                    @(Html.Kendo().DropDownList()
+                                .Name("gender")
+                                .DataTextField("Text")
+                                .DataValueField("Value")
+                                .Value("Male")
+                                .BindTo(new List<SelectListItem>() {
+                                              new SelectListItem() {
+                                                  Text = "Male",
+                                                  Value = "Male"
+                                              },
+                                              new SelectListItem() {
+                                                  Text = "Female",
+                                                  Value = "Female"
+                                              }
+                                  })
+                    )
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="language">I am a </label>
+                <div class="col-sm-8 col-md-6">
+                    @(Html.Kendo().DropDownList()
+                                .Name("type")
+                                .DataTextField("Text")
+                                .DataValueField("Value")
+                                .Value("Customer")
+                                .BindTo(new List<SelectListItem>() {
+                                              new SelectListItem() {
+                                                  Text = "Customer",
+                                                  Value = "Customer"
+                                              },
+                                              new SelectListItem() {
+                                                  Text = "Doctor",
+                                                  Value = "Doctor"
+                                              },
+                                              new SelectListItem() {
+                                                  Text = "Chemist",
+                                                  Value = ""
+                                              }
+                                  })
+                    )
+                </div>
+            </div>
+        </div>
+
+        <div class="form-horizontal form-widgets col-sm-6">
+            <div class="form-group">
+                <label class="control-label col-sm-4" for="address">Address</label>
+                <div class="col-sm-8 col-md-6">
+                    <input id="address" placeholder="e.g. xyz street" class="k-textbox" />
+                </div>
+            </div>
+
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="skills">Skills</label>
+                    <div class="col-sm-8 col-md-6">
+                        @(Html.Kendo().MultiSelect()
+                                    .Name("skills")
+                                    .DataTextField("Text")
+                                    .DataValueField("Value")
+                                    .Value(new string[] { "C#", "jQuery" })
+                                    .BindTo(new List<SelectListItem>() {
+                                                  new SelectListItem() {
+                                                      Text = "C",
+                                                      Value = "C"
+                                                  },
+                                                  new SelectListItem() {
+                                                      Text = "C++",
+                                                      Value = "C++"
+                                                  },
+                                                  new SelectListItem() {
+                                                      Text = "C#",
+                                                      Value = "C#"
+                                                  },
+                                                  new SelectListItem() {
+                                                      Text = "JavaScript",
+                                                      Value = "JavaScript"
+                                                  },
+                                                  new SelectListItem() {
+                                                      Text = "jQuery",
+                                                      Value = "jQuery"
+                                                  },
+                                                  new SelectListItem() {
+                                                      Text = "Git",
+                                                      Value = "Git"
+                                                  },
+                                                  new SelectListItem() {
+                                                      Text = "Node.js",
+                                                      Value = "Node.js"
+                                                  },
+                                                  new SelectListItem() {
+                                                      Text = "Ruby",
+                                                      Value = "Ruby"
+                                                  },
+                                                  new SelectListItem() {
+                                                      Text = "Ruby on Rails",
+                                                      Value = "Ruby on Rails"
+                                                  },
+                                                  new SelectListItem() {
+                                                      Text = "Kendo UI",
+                                                      Value = "Kendo UI"
+                                                  }
+                                      })
+                        )
+                    </div>
+                </div>
+
+                @*<div class="form-group">
+                    <label class="control-label col-sm-4" for="experience">Experience</label>
+                    <div class="col-sm-8 col-md-6">
+                        @(Html.Kendo().NumericTextBox()
+                                .Name("experience")
+                                .Value(4))
+                    </div>
+                </div>*@
+            </div>
+
+            <div class="clearfix"></div>
+
+
+            <div class="buttons-wrap">
+                <button class="k-button k-state-default">Cancel</button>
+                <button class="k-button k-state-default">Update</button>
+            </div>
+</section>
+
+
+
+</div>
