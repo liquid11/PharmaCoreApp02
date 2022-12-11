@@ -22,7 +22,7 @@ namespace PharmaCoreApp02.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Your contact page one.";
 
             return View();
         }
